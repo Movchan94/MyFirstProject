@@ -1,7 +1,7 @@
 
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import state from "./redux/STATE";
+import store from "./redux/STATE";
 import {addPost,updateNewPostText,addMessage, updateNewMessageText } from "./redux/STATE";
 import React from 'react';
 import ReactDOM from "react-dom";
@@ -11,17 +11,16 @@ import {BrowserRouter} from "react-router-dom";
 
 let renenderEntireTree = (state) =>{
 
-    ReactDOM.render(<App state ={state}
-    addPost={addPost}
-    updateNewPostText = {updateNewPostText}
-    addMessage = {addMessage}
-    updateNewMessageText = {updateNewMessageText}
-    />
-        , document.getElementById('root'));
+    ReactDOM.render(
+        <BrowserRouter>
+            <App state ={state} dispatch={store.dispatch.bind(store)}/>
+        </BrowserRouter>, document.getElementById('root'));
 
 }
 
-renenderEntireTree (state);
+renenderEntireTree (store.getState());
+
+store.subscribe(renenderEntireTree);
 
 
 

@@ -14,21 +14,17 @@ import Settings from "./components/Settings/Settings";
 const App = (props) => {
 
     return (
-        <BrowserRouter>
             <div className='app-wrapper'>
                 <Header/>
                 <Navbar/>
                 <div className='app-wrapper-content'>
                     <Route exact path ='/dialogs'
                         render = {() => <Dialogs state ={props.state.dialogsPage}
-                        addMessage = {props.addMessage}
-                        updateNewMessageText = {props.updateNewMessageText}
-                        />}/>
+                        dispatch = {props.dispatch}/>}/>
                     <Route exact path ='/profile'
                         render = {() => <Profile
                         profilePage ={props.state.profilePage}
-                        addPost={props.addPost}
-                        updateNewPostText = {props.updateNewPostText}
+                        dispatch={props.dispatch}
                         />}/>
                     <Route exact path ='/news'
                         render = {() => <News/>}/>
@@ -38,7 +34,7 @@ const App = (props) => {
                         render = {() => <Settings/>}/>
                 </div>
             </div>
-        </BrowserRouter>);
+        )
 }
 
 export default App;
