@@ -46,7 +46,7 @@ let store = {
                     name: 'Max',
                     avaUser: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZDscQaWN7atUkgSou-qIxWLEX7UkEe-qLgLXncWDKWfm8V9RpRg"
                 }],
-            newMessageText:'lalalalaa'
+
 
         },
 
@@ -73,10 +73,16 @@ let store = {
     _callSubscriber(){
         console.log('state  changed');
     },
+    subscribe (observer) {
+        this._callSubscriber = observer;
+    },
+    getState () {
+        return this._state;
+    },
 
 
     dispatch(action){
-        if(action.type === "ADD-POST"){
+        if(action.type === ADD_POST){
             let newPost = {
                 id:'user_5',
                 message: this._state.profilePage.newPostText ,
@@ -85,28 +91,21 @@ let store = {
             this._state.profilePage.posts.push(newPost);
             this._state.profilePage.newPostText = '';
             this._callSubscriber (this._state);
-        }else if(action.type === "UPDATE-NEW-POST-TEXT"){
+        }else if(action.type === UPDATE_NEW_POST_TEXT){
             this._state.profilePage.newPostText = action.newText;
             this._callSubscriber(this._state);
-        }else if(action.type === "ADD-MESSAGE"){
-            let newMessage = {
-                id: 'user_7',
-                message: this._state.dialogsPage.newMessageText
-            };
-            this._state.dialogsPage.messages.push(newMessage);
+        }else if(action.type === UPDATE_NEW_MESSAGE_TEXT){
+            this._state.dialogsPage.newMessageText = action.body;
+            this._callSubscriber (this._state);
+        }else if(action.type === ADD_MESSAGE){
+            let body = this._state.dialogsPage.newMessageText;
             this._state.profilePage.newMessageText = '';
-        }else if(action.type === "UPDATE-NEW-MESSAGE-TEXT"){
-            this._state.dialogsPage.newMessageText = action.newText;
+            this._state.dialogsPage.messages.push({id:'user_7', message:body});
             this._callSubscriber (this._state);
         }
     },
 
-    subscribe (observer) {
-        this._callSubscriber = observer;
-    },
-    getState () {
-        return this._state;
-    }
+
 
 }
 
@@ -119,11 +118,11 @@ export const updateNewPostTextActionCreator = (text) => ({
 })
 
 
-export const addMessageActionCreator = () => ({
+export const addMessageCreator = () => ({
     type:ADD_MESSAGE
 })
-export const updateNewMessageTextActionCreator = (text) => ({
-    type:UPDATE_NEW_MESSAGE_TEXT, newText:text
+export const updateNewMessageTextCreator = (body) => ({
+    type:UPDATE_NEW_MESSAGE_TEXT, body:body
 })
 
 
