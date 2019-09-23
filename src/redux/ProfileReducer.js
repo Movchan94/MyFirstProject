@@ -99,7 +99,7 @@ let store = {
             this._callSubscriber (this._state);
         }else if(action.type === ADD_MESSAGE){
             let body = this._state.dialogsPage.newMessageText;
-            this._state.profilePage.newMessageText = '';
+            this._state.dialogsPage.newMessageText = '';
             this._state.dialogsPage.messages.push({id:'user_7', message:body});
             this._callSubscriber (this._state);
         }
