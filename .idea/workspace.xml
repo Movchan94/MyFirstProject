@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb7d660-7622-4448-b9b2-9857203f2af2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/My posts/MyPostsContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/REDUX-STORE.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/My posts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/My posts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/DialogsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/DialogsReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/ProfileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ProfileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/STORE.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/STORE.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/SidebarReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/SidebarReducer.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -83,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/redux/ProfileReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="47" />
+            <state relative-caret-position="154">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
               <folding>
                 <element signature="e#102#280#0" />
               </folding>
@@ -92,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/redux/DialogsReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+            <state relative-caret-position="462">
+              <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -113,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Profile/My posts/MyPosts.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
@@ -128,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Profile/My posts/MyPostsContainer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+            <state relative-caret-position="330">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#405#652#0" />
@@ -196,17 +184,17 @@
         <option value="$PROJECT_DIR$/src/components/Profile/My posts/MyPostsContainer.jsx" />
         <option value="$PROJECT_DIR$/src/redux/REDUX-STORE.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/redux/ProfileReducer.js" />
         <option value="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Profile/My posts/MyPosts.jsx" />
         <option value="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" />
         <option value="$PROJECT_DIR$/src/redux/DialogsReducer.js" />
+        <option value="$PROJECT_DIR$/src/redux/ProfileReducer.js" />
+        <option value="$PROJECT_DIR$/src/components/Profile/My posts/MyPosts.jsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="923" />
-    <option name="y" value="45" />
+    <option name="x" value="854" />
+    <option name="y" value="19" />
     <option name="width" value="1052" />
     <option name="height" value="960" />
   </component>
@@ -377,12 +365,12 @@
       <workItem from="1569413369036" duration="8029000" />
       <workItem from="1569486461927" duration="12181000" />
       <workItem from="1569576166858" duration="8105000" />
-      <workItem from="1569834269228" duration="12698000" />
+      <workItem from="1569834269228" duration="15506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191637000" />
+    <option name="totallyTimeSpent" value="194445000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -394,7 +382,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="923" y="45" width="1052" height="960" extended-state="0" />
+    <frame x="854" y="19" width="1052" height="960" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48908296" weight="0.23076923" />
@@ -655,41 +643,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Profile/My posts/MyPostsContainer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#405#652#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/ProfileReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="47" />
-          <folding>
-            <element signature="e#102#280#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Profile/My posts/MyPosts.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -708,8 +665,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/DialogsReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+        <state relative-caret-position="462">
+          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/ProfileReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#102#280#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Profile/My posts/MyPostsContainer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#405#652#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Profile/My posts/MyPosts.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
