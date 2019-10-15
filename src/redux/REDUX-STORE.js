@@ -10,7 +10,7 @@ let reducers = combineReducers({
     dialogsPage:dialogsReducer,
     sidebar    :sidebarReducer,
     usersPage  :usersReducer,
-    auth:AuthReducer
+    auth       :AuthReducer
 
 });
 
