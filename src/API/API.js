@@ -17,13 +17,13 @@ export const usersAPI = {
             .then(response => {
                 return response.data
             });
+    },
+    follow(userID){
+
+    },
+    unfollow(userID){
+
     }
 }
 
 
-export const getUsers2 = (currentPage, pageSize) => {
-  return   instance.get(`follow?page=${currentPage}&count=${pageSize}`)
-      .then(response => {
-          return response.data
-      });
-}
