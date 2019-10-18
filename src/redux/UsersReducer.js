@@ -65,10 +65,10 @@ const usersReducer = (state = initialState, action) => {
 }
 
 
-export const follow = (userID) => ({
+export const followSuccess = (userID) => ({
     type: FOLLOW, userID
 })
-export const unfollow = (userID) => ({
+export const unfollowSuccess = (userID) => ({
     type: UNFOLLOW, userID
 })
 export const setUsers = (users) => ({
@@ -86,6 +86,9 @@ export const toggleIsFetching = (isFetching) => ({
 export const toggleFollowingProgress = (isFetching, userID) => ({
     type: TOGGLE_IS_FOLLOWING_PROGRESS, isFetching, userID
 })
+
+
+
 export const getUsers = (currentPage,pageSize ) => {
     return (dispatch) => {
 
@@ -98,6 +101,36 @@ export const getUsers = (currentPage,pageSize ) => {
         });
     }
 }
+
+export const follow = (userID) => {
+    return (dispatch) => {
+        dispatch(toggleFollowingProgress(true, userID));
+        usersAPI.follow(userID)
+            .then(response => {
+                if (response.data.resultCode == 0) {
+                    dispatch(followSuccess(userID))
+                }
+                dispatch(toggleFollowingProgress(false, userID));
+
+            });
+
+    }
+}
+export const unfollow = (userID) => {
+    return (dispatch) => {
+        dispatch(toggleFollowingProgress(true, userID));
+        usersAPI.unfollow(userID)
+            .then(response => {
+                if (response.data.resultCode == 0) {
+                    dispatch(unfollowSuccess(userID))
+                }
+                dispatch(toggleFollowingProgress(false, userID));
+
+            });
+
+    }
+}
+
 
 
 export default usersReducer;

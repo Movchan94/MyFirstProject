@@ -18,12 +18,23 @@ export const usersAPI = {
                 return response.data
             });
     },
-    follow(userID){
-
+    follow (userID){
+        return instance.post(`/follow/${userID}`)
     },
     unfollow(userID){
+       return  instance.delete(`/follow/${userID}`)
+    },
+    getProfile(userId){
+        return instance.get(`profile/`+userId)
 
-    }
+    },
+
+}
+export const authAPI = {
+    authMe(){
+        return instance.get(`auth/me`)
+
+    },
 }
 
 
