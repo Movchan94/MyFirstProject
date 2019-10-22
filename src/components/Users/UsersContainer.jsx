@@ -10,6 +10,7 @@ import Users from './Users';
 import SpinnerPreloader from './Photo/SpinnerPreloader.gif'
 import Preloader from "../common/Preloader/Preloader";
 import {usersAPI} from "../../API/API";
+import {withAuthRedirect} from "../../HOC/withAuthRedirect";
 
 
 
@@ -58,10 +59,10 @@ let mapStateToProps = (state) => {
 
 
 
-export default connect(mapStateToProps,{
+export default withAuthRedirect( connect(mapStateToProps,{
     follow,
     unfollow,
     setCurrentPage,
     toggleFollowingProgress,
     getUsers
-})(UsersContainer);
+})(UsersContainer));
