@@ -9,8 +9,8 @@ import * as axios from "axios";
 import Users from './Users';
 import SpinnerPreloader from './Photo/SpinnerPreloader.gif'
 import Preloader from "../common/Preloader/Preloader";
-import {usersAPI} from "../../API/API";
 import {withAuthRedirect} from "../../HOC/withAuthRedirect";
+import {compose} from "redux";
 
 
 
@@ -57,12 +57,8 @@ let mapStateToProps = (state) => {
     }
 }
 
+export default compose(
+    withAuthRedirect,
+    connect(mapStateToProps,{follow, unfollow, setCurrentPage, toggleFollowingProgress, getUsers})
+)(UsersContainer);
 
-
-export default withAuthRedirect( connect(mapStateToProps,{
-    follow,
-    unfollow,
-    setCurrentPage,
-    toggleFollowingProgress,
-    getUsers
-})(UsersContainer));
