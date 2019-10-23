@@ -18,18 +18,36 @@ export const usersAPI = {
                 return response.data
             });
     },
-    follow (userID){
-        return instance.post(`/follow/${userID}`)
+    follow (userId){
+        return instance.post(`/follow/${userId}`)
     },
-    unfollow(userID){
-       return  instance.delete(`/follow/${userID}`)
+    unfollow(userId){
+       return  instance.delete(`/follow/${userId}`)
     },
     getProfile(userId){
-        return instance.get(`profile/`+userId)
+        console.warn('Obsolete method.Please use Profile obj')
+        return profileAPI.getProfile(userId)
 
     },
 
 }
+
+export const pofileAPI = {
+    getProfile(userId){
+        return instance.get(`profile/`+ userId)
+
+    },
+    getStatus(userId){
+        return instance.get(`status/`+ userId)
+
+    },
+    updateStatus(status){
+        return instance.put(`status`,{status:status})
+
+    }
+
+}
+
 export const authAPI = {
     authMe(){
         return instance.get(`auth/me`)
