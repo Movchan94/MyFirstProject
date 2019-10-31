@@ -5,7 +5,7 @@ import * as axios from "axios";
 const instance = axios.create({
     withCredentials: true,
     headers:{
-        "API-KEY" :"5be565a7-e547-4dd9-8dd4-250fe28b0152"
+        "API-KEY" :"28a27ba4-71f9-4c48-8005-943f7cabf7a3"
     },
     baseURL:'https://social-network.samuraijs.com/api/1.0/'
 
@@ -26,23 +26,24 @@ export const usersAPI = {
     },
     getProfile(userId){
         console.warn('Obsolete method.Please use Profile obj')
+
         return profileAPI.getProfile(userId)
 
     },
 
 }
 
-export const pofileAPI = {
+export const profileAPI = {
     getProfile(userId){
         return instance.get(`profile/`+ userId)
 
     },
     getStatus(userId){
-        return instance.get(`status/`+ userId)
+        return instance.get(`profile/status/`+ userId)
 
     },
     updateStatus(status){
-        return instance.put(`status`,{status:status})
+        return instance.put(`profile/status`,{status:status})
 
     }
 
