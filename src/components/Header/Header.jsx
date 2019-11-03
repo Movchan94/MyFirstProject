@@ -6,7 +6,8 @@ const Header = (props) =>{
 	return <header className = {s.header}>
 			<img src = 'https://static.rfstat.com/renderforest/images/v2/landing-pics/logo_landing/ma5.png'/>
 			<div className={s.loginBlock}>
-				{props.isAuth ? props.login
+				{props.isAuth
+					? <div>{props.login} - <button onClick={props.logout}>Log out</button></div>
 					: <NavLink to = {'/login'}>Login</NavLink>}
 			</div>
 	</header>
