@@ -16,7 +16,7 @@ let reducers = combineReducers({
     usersPage   :usersReducer,
     auth        :AuthReducer,
     form        :formReducer,
-    appL        :AppReducer
+    app         :AppReducer
 
 });
 

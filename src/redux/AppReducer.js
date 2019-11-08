@@ -12,7 +12,7 @@ const AppReducer = (state = initialState, action) => {
         case INITIALIZED_SUCCESS:
             return {
                 ...state,
-                initialized:true
+                initialized: true
             }
         default:
             return state;
@@ -20,12 +20,13 @@ const AppReducer = (state = initialState, action) => {
 }
 
 
-export const initializedSuccess =()=>({type: INITIALIZED_SUCCESS, payload})
+export const initializedSuccess =()=>({type: INITIALIZED_SUCCESS})
 
 export const initializeApp =()=>(dispatch)=> {
 
 let promise = dispatch(getAuthUserData())
-    promise.then(() => {
+    Promise.all([promise])
+    .then(() => {
         dispatch(initializedSuccess())
     });
 }

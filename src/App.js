@@ -18,11 +18,11 @@ import Preloader from "./components/common/Preloader/Preloader";
 
 class App extends React.Component {
     componentDidMount() {
-        this.props.getAuthUserData();
+        this.props.initializeApp();
     }
 
     render(){
-        if (this.props.initialized){
+    if (!this.props.initialized){
             return <Preloader />
         }
     return (
@@ -50,10 +50,10 @@ class App extends React.Component {
     }
 }
 
-const mapStateToProps = (state)=> {
+const mapStateToProps = (state) => ({
     initialized: state.app.initialized
-}
+})
 
 export default compose (
     withRouter,
-    connect(null, {initializeApp}))(App);
+    connect(mapStateToProps, {initializeApp}))(App);

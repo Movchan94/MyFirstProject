@@ -2,8 +2,7 @@ import React from 'react';
 import styles from "./Users.module.css";
 import user from "./Photo/usersPhoto.png";
 import {NavLink} from "react-router-dom";
-import * as axios from "axios";
-import {usersAPI} from "../../API/API";
+
 
 let Users = (props) => {
     let pagesCount = Math.ceil(props.totalUserCount / props.pageSize);
@@ -12,7 +11,9 @@ let Users = (props) => {
         pages.push(i)
     }
 
-    return <div>
+    return(
+
+    <div>
         <div>
             {pages.map(p => {
                 return <span
@@ -24,8 +25,7 @@ let Users = (props) => {
 
         </div>
         <br/>
-        {
-            props.users.map(u => <div key={u.id}>
+        {props.users.map(u => <div key={u.id}>
         <span>
             <div>
                 <NavLink to={'/profile/' + u.id}>
@@ -59,7 +59,7 @@ let Users = (props) => {
             </div>)
         }
     </div>
-}
+)}
 
 export default Users;
 
