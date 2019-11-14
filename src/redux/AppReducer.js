@@ -1,5 +1,6 @@
 
 import {getAuthUserData} from "./AuthReducer";
+import thunk from "redux-thunk";
 const INITIALIZED_SUCCESS = 'INITIALIZED_SUCCESS';
 
 

@@ -1,9 +1,10 @@
 import React from "react";
 import {addMessageCreator} from "../../redux/DialogsReducer";
 import Dialogs from "./Dialogs";
-import connect from "react-redux/es/connect/connect";
+
 import {withAuthRedirect} from "../../HOC/withAuthRedirect";
 import {compose} from "redux";
+import {connect} from "react-redux";
 
 
 let mapStateToProps = (state)=>{
