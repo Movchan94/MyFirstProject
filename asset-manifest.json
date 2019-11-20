@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/MyFirstProject/static/css/main.cb686bef.chunk.css",
-    "main.js": "/MyFirstProject/static/js/main.309b1a71.chunk.js",
-    "main.js.map": "/MyFirstProject/static/js/main.309b1a71.chunk.js.map",
-    "runtime-main.js": "/MyFirstProject/static/js/runtime-main.b9aff01a.js",
-    "runtime-main.js.map": "/MyFirstProject/static/js/runtime-main.b9aff01a.js.map",
-    "static/js/2.bc8b915c.chunk.js": "/MyFirstProject/static/js/2.bc8b915c.chunk.js",
-    "static/js/2.bc8b915c.chunk.js.map": "/MyFirstProject/static/js/2.bc8b915c.chunk.js.map",
+    "main.js": "/MyFirstProject/static/js/main.0ef9dc86.chunk.js",
+    "main.js.map": "/MyFirstProject/static/js/main.0ef9dc86.chunk.js.map",
+    "runtime-main.js": "/MyFirstProject/static/js/runtime-main.0c703ae2.js",
+    "runtime-main.js.map": "/MyFirstProject/static/js/runtime-main.0c703ae2.js.map",
+    "static/js/2.fad0fc35.chunk.js": "/MyFirstProject/static/js/2.fad0fc35.chunk.js",
+    "static/js/2.fad0fc35.chunk.js.map": "/MyFirstProject/static/js/2.fad0fc35.chunk.js.map",
     "static/js/3.ab2d4619.chunk.js": "/MyFirstProject/static/js/3.ab2d4619.chunk.js",
     "static/js/3.ab2d4619.chunk.js.map": "/MyFirstProject/static/js/3.ab2d4619.chunk.js.map",
     "static/css/4.76ff4c3a.chunk.css": "/MyFirstProject/static/css/4.76ff4c3a.chunk.css",
-    "static/js/4.f7ba5fa7.chunk.js": "/MyFirstProject/static/js/4.f7ba5fa7.chunk.js",
-    "static/js/4.f7ba5fa7.chunk.js.map": "/MyFirstProject/static/js/4.f7ba5fa7.chunk.js.map",
+    "static/js/4.9fed35ed.chunk.js": "/MyFirstProject/static/js/4.9fed35ed.chunk.js",
+    "static/js/4.9fed35ed.chunk.js.map": "/MyFirstProject/static/js/4.9fed35ed.chunk.js.map",
     "static/css/5.664799f3.chunk.css": "/MyFirstProject/static/css/5.664799f3.chunk.css",
-    "static/js/5.f735d1dd.chunk.js": "/MyFirstProject/static/js/5.f735d1dd.chunk.js",
-    "static/js/5.f735d1dd.chunk.js.map": "/MyFirstProject/static/js/5.f735d1dd.chunk.js.map",
-    "static/js/6.160c6017.chunk.js": "/MyFirstProject/static/js/6.160c6017.chunk.js",
-    "static/js/6.160c6017.chunk.js.map": "/MyFirstProject/static/js/6.160c6017.chunk.js.map",
+    "static/js/5.05adb10a.chunk.js": "/MyFirstProject/static/js/5.05adb10a.chunk.js",
+    "static/js/5.05adb10a.chunk.js.map": "/MyFirstProject/static/js/5.05adb10a.chunk.js.map",
+    "static/js/6.e18d757c.chunk.js": "/MyFirstProject/static/js/6.e18d757c.chunk.js",
+    "static/js/6.e18d757c.chunk.js.map": "/MyFirstProject/static/js/6.e18d757c.chunk.js.map",
     "index.html": "/MyFirstProject/index.html",
-    "precache-manifest.1533c1c07aa97b10a2a4fd37c12c1759.js": "/MyFirstProject/precache-manifest.1533c1c07aa97b10a2a4fd37c12c1759.js",
+    "precache-manifest.b06809833068f0bd9439ab2ac4df5c2f.js": "/MyFirstProject/precache-manifest.b06809833068f0bd9439ab2ac4df5c2f.js",
     "service-worker.js": "/MyFirstProject/service-worker.js",
     "static/css/4.76ff4c3a.chunk.css.map": "/MyFirstProject/static/css/4.76ff4c3a.chunk.css.map",
     "static/css/5.664799f3.chunk.css.map": "/MyFirstProject/static/css/5.664799f3.chunk.css.map",
@@ -26,9 +26,9 @@
     "static/media/SpinnerPreloader.gif": "/MyFirstProject/static/media/SpinnerPreloader.75ae2ba2.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.b9aff01a.js",
-    "static/js/2.bc8b915c.chunk.js",
+    "static/js/runtime-main.0c703ae2.js",
+    "static/js/2.fad0fc35.chunk.js",
     "static/css/main.cb686bef.chunk.css",
-    "static/js/main.309b1a71.chunk.js"
+    "static/js/main.0ef9dc86.chunk.js"
   ]
 }
