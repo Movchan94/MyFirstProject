@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/MyFirstProject/static/css/main.a89ea6a9.chunk.css",
-    "main.js": "/MyFirstProject/static/js/main.ae868ad7.chunk.js",
-    "main.js.map": "/MyFirstProject/static/js/main.ae868ad7.chunk.js.map",
+    "main.js": "/MyFirstProject/static/js/main.2789dbeb.chunk.js",
+    "main.js.map": "/MyFirstProject/static/js/main.2789dbeb.chunk.js.map",
     "runtime-main.js": "/MyFirstProject/static/js/runtime-main.d7c59118.js",
     "runtime-main.js.map": "/MyFirstProject/static/js/runtime-main.d7c59118.js.map",
-    "static/js/2.77eef704.chunk.js": "/MyFirstProject/static/js/2.77eef704.chunk.js",
-    "static/js/2.77eef704.chunk.js.map": "/MyFirstProject/static/js/2.77eef704.chunk.js.map",
+    "static/js/2.6fc33d24.chunk.js": "/MyFirstProject/static/js/2.6fc33d24.chunk.js",
+    "static/js/2.6fc33d24.chunk.js.map": "/MyFirstProject/static/js/2.6fc33d24.chunk.js.map",
     "index.html": "/MyFirstProject/index.html",
-    "precache-manifest.efb9e74a7407861053afc26f37b795ca.js": "/MyFirstProject/precache-manifest.efb9e74a7407861053afc26f37b795ca.js",
+    "precache-manifest.06865a470af4ae19623acbd6b67c0d2a.js": "/MyFirstProject/precache-manifest.06865a470af4ae19623acbd6b67c0d2a.js",
     "service-worker.js": "/MyFirstProject/service-worker.js",
     "static/css/main.a89ea6a9.chunk.css.map": "/MyFirstProject/static/css/main.a89ea6a9.chunk.css.map",
     "static/media/SpinnerPreloader.gif": "/MyFirstProject/static/media/SpinnerPreloader.75ae2ba2.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.d7c59118.js",
-    "static/js/2.77eef704.chunk.js",
+    "static/js/2.6fc33d24.chunk.js",
     "static/css/main.a89ea6a9.chunk.css",
-    "static/js/main.ae868ad7.chunk.js"
+    "static/js/main.2789dbeb.chunk.js"
   ]
 }
