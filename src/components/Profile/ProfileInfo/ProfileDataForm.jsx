@@ -6,10 +6,10 @@ import {
 import {reduxForm} from "redux-form";
 
 
-const ProfileDataForm = ({profile}) => {
+const ProfileDataForm = ({profile,handleSubmit }) => {
     return (
-    <form>
-        <div><button onClick={()=>{}}>save</button></div>
+    <form onSubmit={handleSubmit}>
+        <div><button>save</button></div>
         <div>
             <b>Full Name</b>: {createField("Full name:", "fullName", Input, null, null, null)}
         </div>
@@ -18,11 +18,11 @@ const ProfileDataForm = ({profile}) => {
         </div>
         <div>
             <b>My skills</b>:
-            {createField("My skills",'lookingForAJobDescription',Textarea, null,null  )}
+            {createField("My skills",'lookingForAJobDescription',Textarea, null,null, null)}
         </div>
         <div>
             <b>About me</b>:
-            {createField("About me",'aboutMe',Textarea,[], null,null  )}
+            {createField("About me",'aboutMe',Textarea,null, null,null  )}
         </div>
        {/* <div>
             <b>Contacts</b>: {Object.keys(profile.contacts).map(key => {
