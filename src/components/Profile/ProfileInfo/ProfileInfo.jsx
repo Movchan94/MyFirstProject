@@ -1,38 +1,74 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './ProfileInfo.module.css';
 import Preloader from "../../common/Preloader/Preloader";
 import ProfileStatusHooks from "./ProfileStatusHooks";
+import usersPhoto from "../../Users/Photo/usersPhoto.png";
+import ProfileDataForm from "./ProfileDataForm";
 
-const ProfileInfo = ({profile, status, updateStatus}) => {
-    if (!profile){
+const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto}) => {
+    let [editMode, setEditMode] = useState(false)
+
+    if (!profile) {
         return <Preloader/>
+    }
+
+    const myPhotoSelected = (e) => {
+        if (e.target.files.length) {
+            savePhoto(e.target.files[0])
+        }
     }
     return (
         <div>
-            <div>
-                <img src='https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg'/>
+            <div className={s.descriptionBlock}>
+                <img src={profile.photos.large || usersPhoto}
+                     className={s.myPhoto}/>
+                    {isOwner && <input type={'file'} onChange={myPhotoSelected}/>}
+                    {editMode
+                        ? <ProfileDataForm profile={profile}/>
+                        : <ProfileData
+                            profile={profile}
+                            isOwner={isOwner}
+                            toEditMode={() => {setEditMode(true)}}
+                        />}
+                <ProfileStatusHooks status={status}
+                                    updateStatus={updateStatus}/>
             </div>
-            <div className ={s.descriptionBlock}>
-
-                <img src = {profile.photos.large}/>
-                <div>
-                    <ProfileStatusHooks status = {status} updateStatus ={updateStatus}/>
-                </div>
-                <div>
-                    {profile.fullName}
-                </div>
-                <div>
-                    {profile.contacts.facebook}
-                </div>
-                <div>
-                    {profile.aboutMe}
-                </div>
-                <div>
-                    {profile.contacts.instagram}
-                </div>
-            </div>
-
         </div>
     )
+
 }
-export default ProfileInfo;
+const ProfileData = ({profile, isOwner, toEditMode}) => {
+    return <div>
+        {isOwner && <div><button onClick={toEditMode}>edit</button></div>}
+            <div>
+                <b>Full Name</b>: {profile.fullName}
+            </div>
+            <div>
+                <b>Looking for a job</b>: {profile.lookingForAJob ? 'yes' : 'no'}
+            </div>
+            {profile.lookingForAJob &&
+                <div>
+                    <b>My skills</b>: {profile.lookingForAJobDescription}
+                </div>
+            }
+            <div>
+                <b>About me</b>: {profile.aboutMe}
+            </div>
+            <div>
+                <b>Contacts</b>: {Object.keys(profile.contacts).map(key => {
+                return <Contact
+                    key={key}
+                    contactTitle={key}
+                    contactValue={profile.contacts[key]}/>
+            })}
+            </div>
+        </div>
+
+   }
+
+
+ const Contact = ({contactTitle, contactValue}) => {
+            return<div className ={s.contact}><b>{contactTitle}</b>:{contactValue}</div>
+        }
+
+  export default ProfileInfo;

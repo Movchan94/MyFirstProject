@@ -25,7 +25,7 @@ const activateEditMode =  () => {
         <div>
             {!editMode &&
             <div>
-                <span onDoubleClick={activateEditMode}> {props.status || '-----'}js </span>
+                <b>Status:</b> <span onDoubleClick={activateEditMode}> {props.status || '-----'}js </span>
             </div>
             }
             {editMode &&
