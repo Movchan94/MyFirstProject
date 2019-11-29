@@ -1,6 +1,12 @@
 import React from 'react';
 import s from './Header.module.css';
 import {NavLink} from "react-router-dom";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import IconButton from "@material-ui/core/IconButton";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+
 
 const Header = (props) =>{
 	return <header className = {s.header}>
@@ -11,6 +17,9 @@ const Header = (props) =>{
 					: <NavLink to = {'/login'}>Login</NavLink>}
 			</div>
 	</header>
+
 	
 };
+
+
 export default Header;

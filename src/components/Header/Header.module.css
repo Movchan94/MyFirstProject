@@ -3,11 +3,10 @@
 	background-color: #222835;
 }
 .header img {
-	
+	margin-top: -5px;
 	width: 100px;
 }
 .loginBlock {
-
 	float:right;
 }
 .loginBlock a {
