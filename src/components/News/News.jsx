@@ -2,7 +2,10 @@ import React from 'react';
 import s from './News.module.css';
 import { Feed, Icon } from 'semantic-ui-react'
 
-const FeedExampleBasic = () => (
+const FeedExampleBasic = (props) =>
+
+    (
+
     <Feed>
         <Feed.Event>
             <Feed.Label>

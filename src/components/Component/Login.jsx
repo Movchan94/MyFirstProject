@@ -8,7 +8,8 @@ import {Redirect} from "react-router-dom";
 import style from "./../common/FormsControls/FormsControls.module.css"
 
 
-const LoginForm = ({handleSubmit, error, captchaUrl }) => {
+
+const LoginForm = ({handleSubmit, error, captchaUrl}) => {
     return (
         <form onSubmit={handleSubmit}>
             {createField('Email', 'email', Input, [required])}
@@ -28,6 +29,7 @@ const LoginForm = ({handleSubmit, error, captchaUrl }) => {
         </form>
     )
 }
+
 const LoginReduxForm = reduxForm({form: 'login'})(LoginForm)
 
 const Login = (props) => {

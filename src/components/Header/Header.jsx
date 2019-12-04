@@ -13,7 +13,9 @@ const Header = (props) =>{
 			<img src = 'https://static.rfstat.com/renderforest/images/v2/landing-pics/logo_landing/ma5.png'/>
 			<div className={s.loginBlock}>
 				{props.isAuth
-					? <div>{props.login} - <button onClick={props.logout}>Log out</button></div>
+					? <div>{props.login} - <Button onClick={props.logout}  variant="contained" color="primary">
+						Log out
+					</Button></div>
 					: <NavLink to = {'/login'}>Login</NavLink>}
 			</div>
 	</header>

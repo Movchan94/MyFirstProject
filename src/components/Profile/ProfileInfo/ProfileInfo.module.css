@@ -1,7 +1,22 @@
 .descriptionBlock {
     padding: 10px;
-
+    background-color: lightgray;
+    margin-bottom: 10px;
 }
+
 .myPhoto {
 
+}
+
+.ProfileData {
+    background-color: whitesmoke;
+    width: 40%;
+    margin: 10px;
+    font-size: 12pt;
+
+
+}
+.EditButton {
+    margin-top: 20px;
+    margin-left: 35%;
 }

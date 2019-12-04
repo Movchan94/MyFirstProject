@@ -24,7 +24,6 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
             }
         )
 
-
     }
     return (
         <div>
@@ -32,7 +31,9 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
                 <img src={profile.photos.large || usersPhoto}
                      className={s.myPhoto}/>
                 {isOwner &&
-                <input type={'file'} onChange={myPhotoSelected}/>}
+                    <div>
+                <input type={'file'} onChange={myPhotoSelected}/>
+                    </div>}
                 {editMode
                     ? <ProfileDataForm
                         profile={profile}
@@ -55,25 +56,25 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
 }
 const ProfileData = ({profile, isOwner, toEditMode}) => {
     return <div>
-        {isOwner && <div>
+        {isOwner && <div className={s.EditButton}>
             <button onClick={toEditMode}>edit</button>
         </div>}
-        <div>
+        <div className={s.ProfileData}>
             <b>Full Name</b>: {profile.fullName}
         </div>
-        <div>
+        <div className={s.ProfileData}>
             <b>Looking for a
                 job</b>: {profile.lookingForAJob ? 'yes' : 'no'}
         </div>
         {profile.lookingForAJob &&
-        <div>
+        <div className={s.ProfileData}>
             <b>My skills</b>: {profile.lookingForAJobDescription}
         </div>
         }
-        <div>
+        <div className={s.ProfileData}>
             <b>About me</b>: {profile.aboutMe}
         </div>
-        <div>
+        <div className={s.ProfileData}>
             <b>Contacts</b>: {Object.keys(profile.contacts).map(key => {
             return <Contact
                 key={key}

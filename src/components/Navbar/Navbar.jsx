@@ -12,7 +12,6 @@ export default class Navbar extends React.Component {
 
     render() {
         const { activeItem } = this.state
-
         return (
             <Menu inverted pointing vertical>
                 <Menu.Item

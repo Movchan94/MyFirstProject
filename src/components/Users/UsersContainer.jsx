@@ -16,6 +16,7 @@ import {
     getTotalUserCount, getUsers
 } from "../../redux/UsersSelectors";
 import {connect} from "react-redux";
+import styles from "./Users.module.css";
 
 
 class UsersContainer extends React.Component {
@@ -31,7 +32,7 @@ class UsersContainer extends React.Component {
     }
 
     render() {
-        return <>
+        return <div>
             {this.props.isFetching ? <Preloader/> : null}
             <Users
                 totalUserCount={this.props.totalUserCount}
@@ -43,7 +44,7 @@ class UsersContainer extends React.Component {
                 unfollow={this.props.unfollow}
                 followingInProgress={this.props.followingInProgress}
             />
-        </>
+        </div>
     }
 }
 
