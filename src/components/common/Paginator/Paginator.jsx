@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styles from './Paginator.module.css';
 
-let Paginator = ({totalUserCount, pageSize, currentPage, onPageChanged, portionSize = 10}) => {
+let Paginator = ({totalUserCount, pageSize, currentPage, onPageChanged, portionSize = 20}) => {
     let pagesCount = Math.ceil(totalUserCount / pageSize);
     let pages = [];
     for (let i = 1; i <= pagesCount; i++) {
@@ -14,7 +14,7 @@ let Paginator = ({totalUserCount, pageSize, currentPage, onPageChanged, portionS
 
 
     return (
-        <div>
+        <div className={styles.paginator}>
             {portionNumber > 1 &&
             <button onClick={() => {
                 setPortionNumber(portionNumber - 1)
@@ -36,27 +36,5 @@ let Paginator = ({totalUserCount, pageSize, currentPage, onPageChanged, portionS
         </div>
     )
 }
-/*let Paginator = ({totalUserCount, pageSize, currentPage, onPageChanged}) => {
-    let pagesCount = Math.ceil(totalUserCount / pageSize);
-    let pages = [];
-    for (let i = 1; i <= pagesCount; i++) {
-        pages.push(i)
-    }
-
-
-    return (
-        <div>
-            {pages
-                .map(p => {
-                    return <span
-                        className={currentPage === p && styles.selectedPage}
-                        onClick={(e) => {
-                            onPageChanged(p)
-                        }}> {p} </span>
-                })}
-        </div>
-    )
-}*/
-
 export default Paginator;
 

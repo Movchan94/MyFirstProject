@@ -1,13 +1,10 @@
 .userPhoto {
 	width:150px;
 	border-radius: 100px;
-
 }
 .UsersCard {
 	margin: 10px;
 	background-color: lightblue;
-	border-radius: 50px;
-
 }
 .UserNameButton {
 	padding-left: 30px;
