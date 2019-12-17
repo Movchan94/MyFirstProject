@@ -7,12 +7,9 @@
     grid-template-columns: 2fr 10fr;
     /*grid-grap: 10px;*/
 }
-
 .app-wrapper-content {
-    margin-top : 15px;
     grid-area: c;
     background-color: lightgrey;
-
-
+    margin: 1rem 0;
 }
 

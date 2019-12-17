@@ -21,6 +21,10 @@ let store = {
                 {id: 'user_3', message: 'it/s ok!'},
                 {id: 'user_4', message: 'Whats up'},
                 {id: 'user_5', message: 'lalala'}],
+            messagesDima: [
+                {id: 'user_1', message: 'Dima!'},
+                {id: 'user_2', message: 'whats \'up'},
+               ],
             dialogs: [
                 {
                     id: 'user_1',
