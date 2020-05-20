@@ -24,7 +24,7 @@ const profileReducer = (state = initialState, action) => {
             let newPost = {
                 id: 'user_5',
                 message: action.NewPostBody,
-                likesCount: 0
+                likesCount: 0,
             };
             return {
                 ...state,
@@ -92,7 +92,7 @@ export const savePhoto = (file) => async (dispatch) => {
     }
 }
 export const saveProfile = (profile) => async (dispatch, getState) => {
-    const userId = getState().auth.userId
+    const userId = getState().auth.userId;
     const response = await profileAPI.saveProfile(profile)
     if (response.data.resultCode === 0) {
         dispatch(getUserProfile(userId));

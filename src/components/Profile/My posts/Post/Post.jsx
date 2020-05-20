@@ -8,6 +8,7 @@ const Post = (props) => {
             <img
                 src='https://media.vanityfair.com/photos/5c5325d33889055ec0570bcf/master/pass/t-ava-max-interview.jpg'/>
             {props.message}
+
             <div>
 
                 <span>like: {props.likesCount}</span>
